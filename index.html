@@ -29,7 +29,7 @@
                     <a href="#">Процесс работы</a>
                     <a href="#">Команда</a>
                 </nav>
-                <button type="button" class="button header__button">
+                <button type="button" class="button header__button modal__button">
                     Оставить заявку
                 </button>
             </div>
@@ -38,7 +38,7 @@
 
     <!-- main -->
 
-    <dmain class="main">
+    <main class="main">
         <!-- main-display -->
         <section class="main-display">
             <div class="container">
@@ -65,7 +65,7 @@
                         <div class="timer__text">Секунд</div>
                     </div>
                 </div>
-                <button class="button maim-display__button">Оставить заявку</button>
+                <button class="button main-display__button modal__button">Оставить заявку</button>
             </div>
             <div class="main-display__background">
                 <img src="./img/main-screen.png" alt="main-screen">
@@ -211,7 +211,7 @@
                     <div class="assembly__description">
                         Мы свяжемся с вами, чтобы уточнить детали заказа
                     </div>
-                    <button class="button assembly__button">
+                    <button class="button assembly__button modal__button">
                         Оставить заявку
                     </button>
                     <div class="assembly__socials">
@@ -235,7 +235,35 @@
                 </div>
             </div>
         </section>
-    </dmain>
+        <!-- modal -->
+        <form action="#" class="modal block__center">
+            <div class="modal__inner">
+                <div class="modal__close">
+                    <img src="./img/close.svg" alt="close">
+                </div>
+                <h3 class="modal__header">
+                    Заявка на сборку ПК
+                </h3>
+                <div class="modal__subheader">
+                    Мы свяжемся с вами, чтобы обсудить детали заказа
+                </div>
+                <div class="modal__elements">
+                    <div class="modal__item">
+                        <input type="text" class="modal__input" placeholder="Как вас зовут">
+                    </div>
+                    <div class="modal__item">
+                        <input type="tel" class="modal__input" placeholder="Номер телефона">
+                    </div>
+                    <div class="modal__item">
+                        <input type="email" class="modal__input" placeholder="E-mail">
+                    </div>
+                </div>
+                <button type="submit" class="button main-display__button">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </main>
 
 
     <!-- js -->
